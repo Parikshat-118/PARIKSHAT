@@ -48,10 +48,10 @@
             width: 100%; height: 15px; border: 2px solid #00ffc6;
             border-radius: 5px; padding: 2px; box-shadow: 0 0 8px #00ffc6;
         }
-        #loading-bar {
-            height: 100%; background-color: #00ffc6;
-            border-radius: 2px; width: 0; animation: fill-bar 4s linear forwards;
-        }
+        #loading-bar { 
+    height: 100%; background-color: #00ffc6;
+    border-radius: 2px; width: 0; animation: fill-bar 1.5s linear forwards; 
+}
         @keyframes fill-bar { from { width: 0%; } to { width: 100%; } }
         #matrix-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
         body::before {
@@ -159,12 +159,12 @@
                     <span id="intro-text" class="text-base"></span><span class="cursor"></span>
                 </div>
                 <nav id="desktop-navigation" class="flex flex-col space-y-2">
-                    <a href="aboutme.html" class="command-link p-1 rounded">./about_me.sh</a>
                     <a href="projects.html" class="command-link p-1 rounded">./list_projects.sh</a>
                     <a href="videos.html" class="command-link p-1 rounded">./play_video_edits.sh</a>
                     <a href="skills.html" class="command-link p-1 rounded">./show_skills.sh</a>
                     <a href="certs.html" class="command-link p-1 rounded">./display_certificates.sh</a>
                     <a href="resume.html" class="command-link p-1 rounded">./download_cv.sh</a>
+                    <a href="aboutme.html" class="command-link p-1 rounded">./about_me.sh</a>
                     <a href="contact.html" class="command-link p-1 rounded">./contact_me.sh</a>
                 </nav>
             </div>
@@ -173,33 +173,6 @@
                     <p><span class="text-green-400">user@portfolio</span>:<span class="text-blue-400">~</span>$ <span id="command-output" class="cursor"></span></p>
                 </div>
                 <div id="content-output" class="flex-grow overflow-y-auto pr-2">
-                    <div id="about" data-title="About Me" data-theme="green">
-                        <h2 class="text-xl sm:text-2xl dynamic-glow mb-4 animate-on-scroll">About Me</h2>
-                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-                            <div class="flex-shrink-0">
-                                <img src="profile.jpg" alt="A photo of Parikshat Singh" class="w-36 h-36 sm:w-48 sm:h-48 rounded-lg border-2 border-current shadow-lg object-cover">
-                            </div>
-                            <div class="text-white">
-                                <p class="text-lg font-bold mb-2 animate-on-scroll dynamic-glow">Coder. Creator. Photographer. Explorer.</p>
-                                <p class="mb-4 animate-on-scroll">Hi, I’m Parikshat Singh</p>
-                                <p class="mb-4 animate-on-scroll">A 2nd-year B.Tech Computer Science student at Bharati Vidyapeeth’s College of Engineering, New Delhi.</p>
-                                <div class="space-y-3">
-                                    <p class="animate-on-scroll">💻 <strong class="dynamic-glow">Coding Enthusiast</strong> – I love solving problems, exploring algorithms, and building projects that bring ideas to life.</p>
-                                    <p class="animate-on-scroll">🎬 <strong class="dynamic-glow">Creative Mind</strong> – Skilled in video editing, where I combine creativity and precision to tell stories visually.</p>
-                                    <p class="animate-on-scroll">📸 <strong class="dynamic-glow">Photography Lover</strong> – A passionate nature and scenic photographer who captures the world through unique perspectives.</p>
-                                    <p class="animate-on-scroll">🏐 <strong class="dynamic-glow">Sports Enthusiast</strong> – Volleyball is my game, helping me stay active, focused, and a strong team player.</p>
-                                    <p class="animate-on-scroll">🤝 <strong class="dynamic-glow">Team Player & Helper</strong> – I enjoy collaborating, supporting others, and growing together through shared learning.</p>
-                                </div>
-                                <p class="mt-4 animate-on-scroll">I may be a little introverted at first, but once the vibe matches, I bring positivity, creativity, and a spirit of teamwork that makes every experience enjoyable and impactful.</p>
-                                <p class="mt-4 italic opacity-80 animate-on-scroll">✨ “Always learning, always creating, always striving to be a better version of myself.”</p>
-                            </div>
-                        </div>
-                    </div>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
                     <div id="projects" data-title="Projects" data-theme="orange">
                         <h2 class="text-xl sm:text-2xl dynamic-glow mb-4 animate-on-scroll">Projects</h2>
                         <div class="space-y-6">
@@ -239,6 +212,74 @@
                                     <h3 class="font-bold text-lg dynamic-glow">FORD VS FERRARI EDIT</h3>
                                 </div>
                             </a>
+                            <a href="4.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title="HOTWHEELS CAR EDIT" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=HOTWHEELS CAR EDIT" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">HOTWHEELS CAR EDIT</h3>
+                                </div>
+                            </a>
+                            <a href="5.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title="EDUMINERVA HEADS EDIT" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=EDUMINERVA HEADS EDIT" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">EDUMINERVA HEADS EDIT</h3>
+                                </div>
+                            </a>
+                            <a href="6.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title="CAMPUS BLOCKS TEAM" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=CAMPUS BLOCKS TEAM" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">CAMPUS BLOCKS TEAM</h3>
+                                </div>
+                                <a href="7.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title=DRIFTINGGTA 5 CAR EDIT" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=DRIFTING" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">DRIFTING</h3>
+                                </div>
+                                <a href="8.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title="SISTER EDIT" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=SISTER EDIT" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">SISTER EDIT</h3>
+                                </div>
+                                <a href="9.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title="NEXON" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=NEXON" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">NEXON</h3>
+                                </div>
+                                <a href="10.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title="REPUBLIC DAY" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=REPUBLIC DAY" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">REPUBLIC DAY</h3>
+                                </div>
+                                <a href="11.mp4" class="glightbox block relative group border p-4 rounded-lg hover:bg-[#00ffff]/10 transition-all animate-on-scroll" data-title="AUTOEXPO25" data-description="">
+                                <img src="https://placehold.co/600x400/0d0d0d/00ffff?text=AUTOEXPO25" alt="Video Thumbnail" class="w-full rounded">
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                                    <i class="fas fa-play text-white text-5xl"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-lg dynamic-glow">AUTOEXPO25</h3>
+                                </div>
+                            </a>
+                            </a>
                         </div>
                     </div>
 
@@ -275,6 +316,28 @@
                             <button type="submit" class="command-link p-2 rounded w-full md:w-1/2 text-center"><i class="fas fa-paper-plane mr-2"></i> Send Message</button>
                             <p id="form-status" class="text-sm pt-2"></p>
                         </form>
+                        <div id="about" data-title="About Me" data-theme="green">
+                        <h2 class="text-xl sm:text-2xl dynamic-glow mb-4 animate-on-scroll">About Me</h2>
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <img src="/files/IMG_20250827_153255108_HDR~2.jpg" alt="A photo of Parikshat Singh" class="w-36 h-36 sm:w-48 sm:h-48 rounded-lg border-2 border-current shadow-lg object-cover">
+                            </div>
+                            <div class="text-white">
+                                <p class="text-lg font-bold mb-2 animate-on-scroll dynamic-glow">Coder. Creator. Photographer. Explorer.</p>
+                                <p class="mb-4 animate-on-scroll">Hi, I’m Parikshat Singh</p>
+                                <p class="mb-4 animate-on-scroll">A 2nd-year B.Tech Computer Science student at Bharati Vidyapeeth’s College of Engineering, New Delhi.</p>
+                                <div class="space-y-3">
+                                    <p class="animate-on-scroll">💻 <strong class="dynamic-glow">Coding Enthusiast</strong> – I love solving problems, exploring algorithms, and building projects that bring ideas to life.</p>
+                                    <p class="animate-on-scroll">🎬 <strong class="dynamic-glow">Creative Mind</strong> – Skilled in video editing, where I combine creativity and precision to tell stories visually.</p>
+                                    <p class="animate-on-scroll">📸 <strong class="dynamic-glow">Photography Lover</strong> – A passionate nature and scenic photographer who captures the world through unique perspectives.</p>
+                                    <p class="animate-on-scroll">🏐 <strong class="dynamic-glow">Sports Enthusiast</strong> – Volleyball is my game, helping me stay active, focused, and a strong team player.</p>
+                                    <p class="animate-on-scroll">🤝 <strong class="dynamic-glow">Team Player & Helper</strong> – I enjoy collaborating, supporting others, and growing together through shared learning.</p>
+                                </div>
+                                <p class="mt-4 animate-on-scroll">I may be a little introverted at first, but once the vibe matches, I bring positivity, creativity, and a spirit of teamwork that makes every experience enjoyable and impactful.</p>
+                                <p class="mt-4 italic opacity-80 animate-on-scroll">✨ “Always learning, always creating, always striving to be a better version of myself.”</p>
+                            </div>
+                        </div>
+                    </div>
                          <div class="flex flex-col space-y-3 mt-6 animate-on-scroll">
                             <a href="mailto:parikshatsingh18@gmail.com" class="command-link p-2 rounded w-full md:w-1/2 text-center"><i class="fas fa-envelope mr-2"></i>parikshatsingh18@gmail.com</a>
                             <a href="https://github.com/Parikshat-118" class="command-link p-2 rounded w-full md:w-1/2 text-center"><i class="fab fa-github mr-2"></i> GitHub</a>
@@ -290,12 +353,13 @@
     <div id="menu-backdrop" class="backdrop-hidden fixed inset-0 bg-black/50 z-40 md:hidden"></div>
     <nav id="navigation" class="menu-hidden md:hidden fixed top-6 right-2 sm:top-8 sm:right-4 bg-[#1a1a1a]/90 border-2 border-glow rounded-lg p-4 z-50 flex flex-col space-y-2">
         <h3 class="text-glow-green text-lg mb-2">Commands:</h3>
-        <a href="aboutme.html" class="command-link p-1 rounded">./about_me.sh</a>
+        
         <a href="projects.html" class="command-link p-1 rounded">./list_projects.sh</a>
         <a href="videos.html" class="command-link p-1 rounded">./play_video_edits.sh</a>
         <a href="skills.html" class="command-link p-1 rounded">./show_skills.sh</a>
         <a href="certs.html" class="command-link p-1 rounded">./display_certificates.sh</a>
         <a href="resume.html" class="command-link p-1 rounded">./download_cv.sh</a>
+        <a href="aboutme.html" class="command-link p-1 rounded">./about_me.sh</a>
         <a href="contact.html" class="command-link p-1 rounded">./contact_me.sh</a>
     </na>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
@@ -351,14 +415,14 @@
             }
             animateLoader();
             setTimeout(() => {
-                loaderWrapper.style.opacity = '0';
-                setTimeout(() => {
-                    loaderWrapper.style.display = 'none';
-                    terminal.style.visibility = 'visible';
-                    terminal.style.opacity = '1';
-                    startTerminal();
-                }, 500);
-            }, 4000);
+    loaderWrapper.style.opacity = '0';
+    setTimeout(() => {
+        loaderWrapper.style.display = 'none';
+        terminal.style.visibility = 'visible';
+        terminal.style.opacity = '1';
+        startTerminal();
+    }, 500);
+}, 1500);
             function startTerminal() {
                 typeWriter(introTextElement, introText, typeSpeed, () => {
                     introTextElement.parentElement.querySelector('.cursor').style.display = 'none';
